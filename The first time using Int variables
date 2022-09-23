@@ -1,0 +1,24 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.Title = "Skynet";
+        //The wrench means it is a variable or a property. The box means its a method or function.
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WindowHeight = 40;
+
+        int num01;
+        int num02;
+        //If we wanted the user to imput a decimal number we would change the variable to Double rather than Int.
+
+        Console.Write("Imput a number: ");
+        num01 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Imput a second number: ");
+        num02 = Convert.ToInt32(Console.ReadLine());
+
+        int result = num01 * num02;
+        Console.WriteLine("The result is " + result);
+
+        Console.ReadKey();
+    }
