@@ -1,0 +1,23 @@
+// See https://aka.ms/new-console-template for more information
+
+Console.Title = "Skynet";
+//The wrench means it is a variable or a property. The box means its a method or function.
+Console.ForegroundColor = ConsoleColor.Green;
+Console.WindowHeight = 40;
+
+Console.WriteLine("A brave knight named...");
+
+Console.ReadLine();
+
+Console.WriteLine("...Wandered the land and found a bar. At the counter he found a...");
+
+Console.ReadLine();
+
+Console.WriteLine("...Who asked him what he wanted to drink...");
+
+Console.ReadLine();
+
+Console.WriteLine("...Shouted the knight!");
+Console.WriteLine("But it was too late... A dragon ate them both");
+
+Console.ReadKey();
