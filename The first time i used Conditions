@@ -1,0 +1,27 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.Title = "Skynet";
+        //The wrench means it is a variable or a property. The box means its a method or function.
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WindowHeight = 40;
+
+        Console.WriteLine("Welcome! Tickets are £5. Please insert cash.");
+
+        int cash = Convert.ToInt32(Console.ReadLine());
+
+        if(cash < 5)
+        {
+            Console.WriteLine("That's not enough money.");
+        }
+        else if(cash == 5)
+        {
+            Console.WriteLine("Here is your ticket.");
+        }
+        else
+        {
+            int Change = cash - 5;
+            Console.WriteLine("Here is your ticket and " + Change + " pounds in change.");
+        }
+        Console.ReadKey();
