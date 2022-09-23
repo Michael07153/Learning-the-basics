@@ -1,0 +1,27 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.Title = "Skynet";
+        //The wrench means it is a variable or a property. The box means its a method or function.
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WindowHeight = 40;
+
+        int age;
+        int height;
+
+        Console.Write("Please imput age: ");
+        age = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Please imput height (cm): ");
+        height = Convert.ToInt32(Console.ReadLine());
+
+        if (age >= 18 && height >= 160) { //If we only wanted one of the conditions to be met we would change the && for ||.
+            Console.WriteLine("You can enter!");
+        } else {
+            Console.WriteLine("You dont meet the requirements!");
+        }
+        
+        Console.ReadKey();
+    }
+}
